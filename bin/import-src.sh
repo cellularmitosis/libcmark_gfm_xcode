@@ -90,7 +90,7 @@ EOF
 
 # xcodegen doesn't seem to generate an "umbrella header", so make one manually:
 PROJNAME=libcmark_gfm
-cat > src/$PROJNAME.h << "EOF"
+cat > src/$PROJNAME.h << EOF
 #import <Foundation/Foundation.h>
 FOUNDATION_EXPORT double ${PROJNAME}VersionNumber;
 FOUNDATION_EXPORT const unsigned char ${PROJNAME}VersionString[];
