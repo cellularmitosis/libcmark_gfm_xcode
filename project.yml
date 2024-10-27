@@ -8,3 +8,5 @@ targets:
     deploymentTarget: "15.6"
     scheme: {}
     sources: [src, extensions]
+    settings:
+      GENERATE_INFOPLIST_FILE: YES
