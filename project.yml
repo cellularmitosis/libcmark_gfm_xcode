@@ -6,4 +6,5 @@ targets:
     type: framework
     platform: iOS
     deploymentTarget: "15.6"
+    scheme: {}
     sources: [src, extensions]
