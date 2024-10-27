@@ -95,3 +95,9 @@ cat > src/$PROJNAME.h << EOF
 FOUNDATION_EXPORT double ${PROJNAME}VersionNumber;
 FOUNDATION_EXPORT const unsigned char ${PROJNAME}VersionString[];
 EOF
+
+cd src
+ls *.h | sed -e 's|^|#include "|' | sed -e 's|$|"|' >> $PROJNAME.h
+cd ../extensions
+ls *.h | sed -e 's|^|#include "|' | sed -e 's|$|"|' >> ../src/$PROJNAME.h
+cd ..
