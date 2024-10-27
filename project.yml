@@ -1,0 +1,9 @@
+name: libcmark_gfm
+options:
+  bundleIdPrefix: com.pepas
+targets:
+  libcmark_gfm:
+    type: framework
+    platform: iOS
+    deploymentTarget: "15.6"
+    sources: [src, extensions]
